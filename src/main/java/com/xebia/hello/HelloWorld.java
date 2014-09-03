@@ -18,7 +18,7 @@ public class HelloWorld extends HttpServlet {
         if (env == null) {
             env = "No env defined";
         }
-        out.println("<p>Hello environment demo : " + env + "</p>");
+        out.println("<p>Hello environment YEAH !!!!!!! : " + env + "</p>");
     }
 
 }

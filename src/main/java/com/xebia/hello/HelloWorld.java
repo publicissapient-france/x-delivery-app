@@ -13,7 +13,7 @@ public class HelloWorld extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         PrintWriter out = response.getWriter();
         out.println("<!DOCTYPE html PUBLIC \"-//W3C//DTD HTML 4.01//EN\">");
-        out.println("<title>Bonjour tout le monde&amp;nbsp;!</title>");
+        out.println("<title>Bonjour tout le monde!</title>");
         String env = System.getenv("env");
         if (env == null) {
             env = "No env defined";

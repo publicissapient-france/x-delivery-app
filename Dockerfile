@@ -19,7 +19,7 @@ RUN wget -q https://archive.apache.org/dist/tomcat/tomcat-${TOMCAT_MAJOR_VERSION
 
 ADD docker-scripts/create_tomcat_admin_user.sh /create_tomcat_admin_user.sh
 
-ADD my-app.war /tomcat/webapps/
+ADD target/my-app.war /tomcat/webapps/
 ADD docker-scripts/run.sh /run.sh
 RUN chmod +x /*.sh
 RUN chmod +x /tomcat/bin/*.sh
